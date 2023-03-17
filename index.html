@@ -1,16 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    
-</head>
-<body>
+    <title>Add to cart</title>
+    <style>
+        body {
+            background-color: rgb(250, 246, 236);
+            width: 100%;
+        }
 
-    
+        main {
+            background-color: rgb(98, 96, 96);
+            width: 90%;
+            margin: 0 auto;
+            padding: 10PX;
+            display: flex;
+            position: relative;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        #add-products {
+            background-color: tomato;
+        }
+
+        #add-products input {
+            outline: none;
+            padding: 3px 7px;
+            background-color: white;
+            border: none;
+            position: absolute;
+        }
+
+        #add-products input:first-child {
+            border-radius: 5px 0 0 5px;
+            left: 10px;
+            border: 1px solid gold;
+
+        }
+
+        #add-products input:nth-child(2) {
+            border: 1px solid gold;
+            border-left: 3px solid gold;
+            left: 186px;
+        }
+
+        #add-products input:nth-child(3) {
+            border: 1px solid gold;
+            border-left: 3px solid gold;
+
+            border-radius: 0 5px 5px 0;
+            left: 364px;
+        }
+
+        #add-products input:nth-child(3):hover {
+            background-color: goldenrod;
+            color: white;
+        }
+
+        #add-products p {
+            left: 10px;
+            position: absolute;
+            background-color: rgb(0, 0, 0);
+            color: white;
+            padding: 5px 7px;
+            border: 1px solid gold;
+            border-radius: 5px;
+
+        }
+
+        #add-products p span {
+            color: gold;
+            font-weight: bolder;
+        }
+
+        table {
+            border-collapse: collapse;
+            border: 1px solid gold;
+        }
+
+
+        th,
+        tr,
+        td {
+            border: 1px solid gold;
+            padding: 3px 5px;
+            color: white;
+        }
+
+        th {
+            color: rgb(254, 155, 26);
+        }
+    </style>
+
+</head>
+
+<body>
+    <main>
+
+        <div id="add-products">
+            <input type="text" id="product-name" placeholder="product name">
+            <input type="number" id="product-quantity" placeholder="product quantity">
+            <input type="submit" id="add-btn" value="add">
+            <br>
+            <p>product price $ <span id="product-price">0</span></p>
+        </div>
+
+        <div id="add-to-cart">
+            <table>
+                <tr>
+                    <th>No</th>
+                    <th>Product Name</th>
+                    <th>price</th>
+
+                </tr>
+                <tr>
+                    <td>No</td>
+                    <td>Product Name</td>
+                    <td>fg</td>
+
+                </tr>
+                <tr>
+                    <td>No</td>
+                    <td>Product Name</td>
+                    <td>fg</td>
+
+                </tr>
+            </table>
+        </div>
+
+    </main>
+
 
     <script src="index.js"></script>
 </body>
+
 </html>
